@@ -66,6 +66,9 @@ namespace AddressBookSystem
                     case 9:
                         SortContactsFlow();
                         break;
+                    case 10:
+                        SortByCityStateZipFlow();
+                        break;
 
                     case 0:
                         Console.WriteLine("Exiting...");
@@ -339,6 +342,59 @@ namespace AddressBookSystem
             }
 
             Console.WriteLine("\nSorted Contacts:");
+            for (int i = 0; i < count; i++)
+            {
+                Console.WriteLine($"{persons[i].FirstName} {persons[i].LastName} - {persons[i].City}");
+            }
+        }
+        // UC12
+        private void SortByCityStateZipFlow()
+        {
+            if (currentBook == null)
+            {
+                Console.WriteLine("Please select an Address Book first.");
+                return;
+            }
+
+            ContactPerson[] persons = currentBook.GetContacts();
+            int count = currentBook.GetContactCount();
+
+            Console.WriteLine("Sort by:");
+            Console.WriteLine("1. City");
+            Console.WriteLine("2. State");
+            Console.WriteLine("3. Zip");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < count - 1; i++)
+            {
+                for (int j = 0; j < count - i - 1; j++)
+                {
+                    bool swap = false;
+
+                    switch (choice)
+                    {
+                        case 1:
+                            swap = string.Compare(persons[j].City, persons[j + 1].City, true) > 0;
+                            break;
+                        case 2:
+                            swap = string.Compare(persons[j].State, persons[j + 1].State, true) > 0;
+                            break;
+                        case 3:
+                            swap = string.Compare(persons[j].Zip, persons[j + 1].Zip, true) > 0;
+                            break;
+                    }
+
+                    if (swap)
+                    {
+                        ContactPerson temp = persons[j];
+                        persons[j] = persons[j + 1];
+                        persons[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\nSorted Results:");
             for (int i = 0; i < count; i++)
             {
                 Console.WriteLine($"{persons[i].FirstName} {persons[i].LastName} - {persons[i].City}");
