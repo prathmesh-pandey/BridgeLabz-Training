@@ -39,7 +39,7 @@ class CarRental
 
     static void Main()
     {
-        CarRental c = new CarRental("Aditi", "BMW M4 Competition", 3);
+        CarRental c = new CarRental("Prathmesh", "BMW M4 Competition", 3);
         c.Display();
     }
 }
