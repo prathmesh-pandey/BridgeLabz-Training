@@ -14,9 +14,10 @@ namespace Employee
             {
                 Console.WriteLine("1. Add Employee");
                 Console.WriteLine("2. Attendance Check (UC1 + UC3)");
-                Console.WriteLine("3. Calculate Daily Wage using Switch Case (UC4)");
-                Console.WriteLine("4. Display Employee");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("3. Calculate Daily Wage (UC4)");
+                Console.WriteLine("4. Calculate Monthly Wage (UC5)");
+                Console.WriteLine("5. Display Employee");
+                Console.WriteLine("6. Exit");
 
                 int choice = int.Parse(Console.ReadLine());
 
@@ -35,12 +36,15 @@ namespace Employee
                         break;
 
                     case 4:
-                        employeeService.DisplayEmployee();
+                        employeeService.CalculateMonthlyWage();
                         break;
 
                     case 5:
-                        return;
+                        employeeService.DisplayEmployee();
+                        break;
 
+                    case 6:
+                        return;
                     default:
                         Console.WriteLine("Invalid Choice");
                         break;
