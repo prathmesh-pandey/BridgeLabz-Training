@@ -16,8 +16,9 @@ namespace Employee
                 Console.WriteLine("2. Attendance Check (UC1 + UC3)");
                 Console.WriteLine("3. Calculate Daily Wage (UC4)");
                 Console.WriteLine("4. Calculate Monthly Wage (UC5)");
-                Console.WriteLine("5. Display Employee");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("5. Calculate Wage Till Condition (UC6)");
+                Console.WriteLine("6. Display Employee");
+                Console.WriteLine("7. Exit");
 
                 int choice = int.Parse(Console.ReadLine());
 
@@ -40,13 +41,17 @@ namespace Employee
                         break;
 
                     case 5:
+                        employeeService.CalculateWageTillCondition();
+                    break;
+
+                    case 6:
                         employeeService.DisplayEmployee();
                         break;
 
-                    case 6:
+                    case 7:
                         return;
-                    default:
-                        Console.WriteLine("Invalid Choice");
+                        default:
+                            Console.WriteLine("Invalid Choice");
                         break;
                 }
             }

@@ -11,6 +11,9 @@ namespace Employee
         private const int WAGE_PER_HOUR = 20;  //UC2 Added
         private const int FULL_DAY_HOURS = 8;
         private const int PART_TIME_HOURS = 4;
+        private const int WORKING_DAYS = 20;
+        private const int MAX_WORKING_DAYS = 20;
+        private const int MAX_WORKING_HOURS = 100;
 
         public void AddEmployee()
         {
@@ -76,6 +79,65 @@ public void CalculateDailyWage()
             employees[i].DailyWage = 0;
         }
     }
+}
+
+// UC5: Calculate Monthly Wage (20 Working Days)
+public void CalculateMonthlyWage()
+{
+    for (int i = 0; i < count; i++)
+    {
+        int totalWage = 0;
+
+        for (int day = 1; day <= WORKING_DAYS; day++)
+        {
+            totalWage = totalWage + employees[i].DailyWage;
+        }
+
+        employees[i].MonthlyWage = totalWage;
+    }
+
+    Console.WriteLine("Monthly Wage Calculated Successfully");
+}
+
+// UC6: Calculate Wage till total working hours or days reached
+public void CalculateWageTillCondition()
+{
+    for (int i = 0; i < count; i++)
+    {
+        int totalHours = 0;
+        int totalDays = 0;
+        int totalWage = 0;
+
+        while (totalDays < MAX_WORKING_DAYS && totalHours < MAX_WORKING_HOURS)
+        {
+            int empCheck = random.Next(0, 3);
+            int hoursWorked = 0;
+
+            switch (empCheck)
+            {
+                case 1: // Full Time
+                    hoursWorked = full_day_hours;
+                    break;
+
+                case 2: // Part Time
+                    hoursWorked = PART_TIME_HOURS;
+                    break;
+
+                default: // Absent
+                    hoursWorked = 0;
+                    break;
+            }
+
+            totalHours = totalHours + hoursWorked;
+            totalWage = totalWage + (hoursWorked * wage_per_hour);
+            totalDays++;
+        }
+
+        employees[i].TotalWorkingHours = totalHours;
+        employees[i].MonthlyWage = totalWage;
+    }
+
+    Console.WriteLine("Wage Calculated Till Condition Reached");
 }
         public void DisplayEmployee()
         {

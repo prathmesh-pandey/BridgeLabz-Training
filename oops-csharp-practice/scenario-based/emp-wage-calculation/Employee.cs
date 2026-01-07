@@ -11,6 +11,7 @@ namespace Employee
         private int dailywage;   //UC2 Daily wage Calculation
         private string employeetype;   // UC3 Employee Type
         private int monthlywage;   // UC5 Monthly Wage
+        private int totalworkinghours;   // UC6
 
         public string EmployeeId
         {
@@ -94,9 +95,22 @@ namespace Employee
         monthlywage = value;
     }
 }
+
+//UC 6
+public int TotalWorkingHours
+{
+    get
+    {
+        return totalworkinghours;
+    }
+    set
+    {
+        totalworkinghours = value;
+    }
+}
         public override string ToString()
         {
-            return "Employee ID : " + employeeid + "\nEmployee Name : " + employeename + "\nEmployee Salary : " + employeesalary + "\nEmployee Attendance : " + employeeattendance + "\nDaily Wage : " + dailywage+ "\nMonthly Wage : " + monthlywage;
+            return "Employee ID : " + employeeid + "\nEmployee Name : " + employeename + "\nEmployee Salary : " + employeesalary + "\nEmployee Attendance : " + employeeattendance + "\nDaily Wage : " + dailywage+ "\nMonthly Wage : " + monthlywage+"\nTotal Working Hours : " + totalworkinghours;
         }
     
     }
