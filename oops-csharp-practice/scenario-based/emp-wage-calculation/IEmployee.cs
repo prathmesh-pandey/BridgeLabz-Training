@@ -6,5 +6,6 @@
         void AttendanceCheck();
         void DisplayEmployee();
         void CalculateDailyWage();
+        void CalculateMonthlyWage();   // UC 5
     }
 }
