@@ -10,6 +10,7 @@ namespace Employee
 
         private const int WAGE_PER_HOUR = 20;  //UC2 Added
         private const int FULL_DAY_HOURS = 8;
+        private const int PART_TIME_HOURS = 4;
 
         public void AddEmployee()
         {
@@ -30,44 +31,52 @@ namespace Employee
 
 
         // UC1: Check Employee is Present or Absent
-        public void AttendanceCheck()
+        // UC3: Employee Type Check using RANDOM
+public void AttendanceCheck()
+{
+    for (int i = 0; i < count; i++)
+    {
+        int empCheck = random.Next(0, 3);
+
+        if (empCheck == 0)
         {
-            for (int i = 0; i < count; i++)
-            {
-                int isPresent = random.Next(0, 2);
-
-                if (isPresent == 1)
-                {
-                    employees[i].EmployeeAttendance = "Present";
-                }
-                else
-                {
-                    employees[i].EmployeeAttendance = "Absent";
-                }
-            }
-
-
+            employees[i].EmployeeAttendance = "Absent";
+            employees[i].EmployeeType = "Absent";
         }
+        else if (empCheck == 1)
+        {
+            employees[i].EmployeeAttendance = "Present";
+            employees[i].EmployeeType = "Full Time";
+        }
+        else
+        {
+            employees[i].EmployeeAttendance = "Present";
+            employees[i].EmployeeType = "Part Time";
+        }
+    }
+}
 
 
         // UC2 Calculate Daily Wage
-        public void CalculateDailyWage()
+        // UC3 Calculate Daily Wage based on Employee Type
+public void CalculateDailyWage()
+{
+    for (int i = 0; i < count; i++)
+    {
+        if (employees[i].EmployeeType == "Full Time")
         {
-            for (int i = 0; i < count; i++)
-            {
-                if (employees[i].EmployeeAttendance == "Present")
-                {
-                    employees[i].DailyWage = WAGE_PER_HOUR * FULL_DAY_HOURS;
-                }
-                else
-                {
-                    employees[i].DailyWage = 0;
-                }
-            }
-
-            Console.WriteLine("Daily Wage Calculated");
+            employees[i].DailyWage = wage_per_hour * full_day_hours;
         }
-
+        else if (employees[i].EmployeeType == "Part Time")
+        {
+            employees[i].DailyWage = wage_per_hour * PART_TIME_HOURS;
+        }
+        else
+        {
+            employees[i].DailyWage = 0;
+        }
+    }
+}
         public void DisplayEmployee()
         {
             for (int i = 0; i < count; i++)

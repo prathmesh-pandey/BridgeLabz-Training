@@ -9,6 +9,7 @@ namespace Employee
         private string employeesalary;
         private string employeeattendance;   
         private int dailywage;   //UC2 Daily wage Calculation
+        private string employeetype;   // UC3 Employee Type
 
         public string EmployeeId
         {
@@ -68,6 +69,17 @@ namespace Employee
             set { dailywage = value; }
         }
 
+        public string EmployeeType
+{
+    get
+    {
+        return employeetype;
+    }
+    set
+    {
+        employeetype = value;
+    }
+}
         public override string ToString()
         {
             return "Employee ID : " + employeeid + "\nEmployee Name : " + employeename + "\nEmployee Salary : " + employeesalary + "\nEmployee Attendance : " + employeeattendance + "\nDaily Wage : " + dailywage; ;
