@@ -12,6 +12,6 @@ public class PartTimeEmployee : Employee
 
     public override double CalculateSalary()
     {
-        return hoursWorked * hourlyRate;
+        return hoursWorked * hourlyRate; //part time total salary
     }
 }

@@ -1,25 +1,26 @@
 using System;
 
-public class VegItem : FoodItem, IDiscountable
+public class PlantItem : MenuItem, IOfferApplicable
 {
-    public VegItem(double price, int quantity)
+    public PlantItem(double unitPrice, int count)
+        : base(unitPrice, count)
     {
-        this.price = price;
-        this.quantity = quantity;
     }
 
-    public override double CalculateTotalPrice()
+    // Total cost without extra charges
+    public override double GetTotalCost()
     {
-        return price * quantity;
+        return unitPrice * count;
     }
 
-    public double ApplyDiscount()
+    // Offer for veg items
+    public double CalculateOffer()
     {
-        return CalculateTotalPrice() * 0.10;
+        return GetTotalCost() * 0.10; // 10% offer
     }
 
-    public string GetDiscountDetails()
+    public string FetchOfferInfo()
     {
-        return "10% Veg Discount";
+        return "Veg item offer: 10%";
     }
 }

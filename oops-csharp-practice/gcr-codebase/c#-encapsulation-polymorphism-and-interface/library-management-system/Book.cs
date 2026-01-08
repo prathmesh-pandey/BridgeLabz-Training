@@ -1,22 +1,21 @@
 using System;
 
-public class Book : LibraryItem, IReservable
+public class TextBook : LibraryItem, IReservable
 {
-    private bool isAvailable = true;
+    private bool availableStatus = true;
 
     public override int GetLoanDuration()
     {
-        return 14;
+        return 14; // 14 days loan period
     }
 
     public void ReserveItem()
     {
-        //mark book as reserved
-        isAvailable = false;
+        availableStatus = false;
     }
 
     public bool CheckAvailability()
     {
-        return isAvailable;
+        return availableStatus;
     }
 }

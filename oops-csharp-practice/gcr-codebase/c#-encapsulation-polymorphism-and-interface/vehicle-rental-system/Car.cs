@@ -1,27 +1,28 @@
 using System;
 
-public class Car : Vehicle, IInsurable
+public class FourWheeler : Vehicle, IInsurable
 {
-    private string insurancePolicyNumber;
+    private string policyId;
+    private double dailyRent;
 
-    public Car(double rentalRatePerDay, string insurancePolicyNumber)
+    public FourWheeler(double dailyRent, string policyId)
     {
-        this.rentalRatePerDay = rentalRatePerDay;
-        this.insurancePolicyNumber = insurancePolicyNumber;
+        this.dailyRent = dailyRent;
+        this.policyId = policyId;
     }
 
-    public override double CalculateRentalCost(int totalDays)
+    public override double CalculateRentalCost(int days)
     {
-        return rentalRatePerDay * totalDays;
+        return dailyRent * days;
     }
 
     public double CalculateInsurance()
     {
-        return 500;
+        return 500; // higher insurance for car
     }
 
     public string GetInsuranceDetails()
     {
-        return insurancePolicyNumber;
+        return policyId;
     }
 }

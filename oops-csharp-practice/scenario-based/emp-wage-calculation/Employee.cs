@@ -67,8 +67,16 @@ namespace Employee
         // UC2 Daily Wage
         public int DailyWage
         {
-            get { return dailywage; }
-            set { dailywage = value; }
+            get 
+            { 
+                return dailywage;
+
+            }
+            set
+            { 
+                dailywage = value; 
+            }
+            
         }
 
         //UC 3

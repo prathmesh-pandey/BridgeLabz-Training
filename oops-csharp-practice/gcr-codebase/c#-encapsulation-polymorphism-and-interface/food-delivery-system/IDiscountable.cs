@@ -1,5 +1,5 @@
-public interface IDiscountable
+public interface IOfferApplicable
 {
-    double ApplyDiscount();
-    string GetDiscountDetails();
+    double CalculateOffer();
+    string FetchOfferInfo();
 }

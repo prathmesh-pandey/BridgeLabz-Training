@@ -7,5 +7,6 @@
         void DisplayEmployee();
         void CalculateDailyWage();
         void CalculateMonthlyWage();   // UC 5
+        void CalculateWageTillCondition();   // UC6
     }
 }

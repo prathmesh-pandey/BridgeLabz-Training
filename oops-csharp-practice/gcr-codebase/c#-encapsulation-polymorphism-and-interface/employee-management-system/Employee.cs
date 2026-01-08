@@ -1,12 +1,12 @@
 public abstract class Employee : IDepartment
 {
-    // Encapsulation: private fields
+    // Encapsulation:
+
     private int employeeId;
     private string name;
     private double baseSalary;
     private string department;
 
-    // Properties (controlled access)
     public int EmployeeId
     {
         get { return employeeId; }
@@ -19,11 +19,13 @@ public abstract class Employee : IDepartment
         protected set { name = value; }
     }
 
+
     public double BaseSalary
     {
         get { return baseSalary; }
         protected set { baseSalary = value; }
     }
+
 
     // Constructor
     protected Employee(int id, string name, double baseSalary)
@@ -33,8 +35,10 @@ public abstract class Employee : IDepartment
         BaseSalary = baseSalary;
     }
 
+
     // Abstract method
     public abstract double CalculateSalary();
+
 
     // Concrete method
     public void DisplayDetails()
@@ -43,8 +47,8 @@ public abstract class Employee : IDepartment
         Console.WriteLine($"Name: {Name}");
         Console.WriteLine($"Department: {department}");
         Console.WriteLine($"Final Salary: {CalculateSalary()}");
-        Console.WriteLine("---------------------------------");
     }
+
 
     // Interface implementation
     public void AssignDepartment(string departmentName)

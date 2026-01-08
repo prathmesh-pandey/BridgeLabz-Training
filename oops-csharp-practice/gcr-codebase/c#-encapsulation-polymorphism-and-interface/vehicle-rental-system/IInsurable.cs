@@ -1,5 +1,5 @@
-public interface IInsurable
+public interface IPolicyCovered
 {
-    double CalculateInsurance();
-    string GetInsuranceDetails();
+    double ComputeInsuranceCost();
+    string FetchPolicyInfo();
 }

@@ -1,22 +1,19 @@
 using System;
 
-public abstract class Vehicle
+public abstract class RentalVehicle
 {
-    private string vehicleNumber;
-    private string vehicleType;
-    protected double rentalRatePerDay;
+    // Encapsulated core details
+    public string RegistrationNo { get; set; }
+    public string Category { get; set; }
 
-    public string VehicleNumber
+    // Shared rental rate
+    protected double dailyCharge;
+
+    protected RentalVehicle(double dailyCharge)
     {
-        get { return vehicleNumber; }
-        set { vehicleNumber = value; }
+        this.dailyCharge = dailyCharge;
     }
 
-    public string VehicleType
-    {
-        get { return vehicleType; }
-        set { vehicleType = value; }
-    }
-
-    public abstract double CalculateRentalCost(int totalDays);
+    // Abstract rental logic
+    public abstract double ComputeRental(int days);
 }
