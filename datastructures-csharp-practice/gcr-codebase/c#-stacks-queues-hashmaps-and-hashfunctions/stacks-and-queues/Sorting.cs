@@ -13,6 +13,7 @@ class SortStackRecursion
 
     static void Insert(Stack<int> st, int x)
     {
+        
         if (st.Count == 0 || st.Peek() <= x)
         {
             st.Push(x);
