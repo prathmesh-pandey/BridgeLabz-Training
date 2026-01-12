@@ -32,8 +32,8 @@ namespace AddressBookSystem
                 Console.WriteLine("7. View Persons by City/State");
                 Console.WriteLine("8. Count by City/State");
                 Console.WriteLine("9. Sort Contacts");
-                Console.WriteLine("10. Save to File");
-                Console.WriteLine("11. Load from File");
+                Console.WriteLine("11. Save as CSV (Library)");
+                Console.WriteLine("12. Load from CSV (Library)");
                 Console.WriteLine("0. Exit");
                 Console.Write("Choose option: ");
 
@@ -77,10 +77,10 @@ namespace AddressBookSystem
                         SortByCityStateZipFlow();
                         break;
                     case 11:
-                        AddressBookFileIO.WriteToFile(currentBook, "contacts.txt");
+                        AddressBookFileIO.WriteToCsv(currentBook, "contacts.csv");
                         break;
                     case 12:
-                        AddressBookFileIO.ReadFromFile(currentBook, "contacts.txt");
+                        AddressBookFileIO.ReadFromCsv(currentBook, "contacts.csv");
                         break;
 
                     case 0:

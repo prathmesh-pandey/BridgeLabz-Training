@@ -1,37 +1,31 @@
 using System;
 using System.IO;
+using System.Globalization;
+using CsvHelper;
 
 namespace AddressBookSystem
 {
     public class AddressBookFileIO
     {
-        public static void WriteToFile(IAddressBook book, string path)
+        public static void WriteToCsv(IAddressBook book, string path)
         {
-            ContactPerson[] persons = book.GetContacts();
-            int count = book.GetContactCount();
-
-            using (StreamWriter writer = new StreamWriter(path))
+            using (var writer = new StreamWriter(path))
+            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
             {
+                ContactPerson[] persons = book.GetContacts();
+                int count = book.GetContactCount();
+
                 for (int i = 0; i < count; i++)
                 {
-                    string line =
-                        persons[i].FirstName + "," +
-                        persons[i].LastName + "," +
-                        persons[i].Address + "," +
-                        persons[i].City + "," +
-                        persons[i].State + "," +
-                        persons[i].Zip + "," +
-                        persons[i].PhoneNumber + "," +
-                        persons[i].Email;
-
-                    writer.WriteLine(line);
+                    csv.WriteRecord(persons[i]);
+                    csv.NextRecord();
                 }
             }
 
-            Console.WriteLine("Contacts saved to file.");
+            Console.WriteLine("Contacts written to CSV.");
         }
 
-        public static void ReadFromFile(IAddressBook book, string path)
+        public static void ReadFromCsv(IAddressBook book, string path)
         {
             if (!File.Exists(path))
             {
@@ -39,28 +33,18 @@ namespace AddressBookSystem
                 return;
             }
 
-            string[] lines = File.ReadAllLines(path);
-
-            foreach (string line in lines)
+            using (var reader = new StreamReader(path))
+            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
-                string[] data = line.Split(',');
+                var records = csv.GetRecords<ContactPerson>();
 
-                ContactPerson person = new ContactPerson
+                foreach (var person in records)
                 {
-                    FirstName = data[0],
-                    LastName = data[1],
-                    Address = data[2],
-                    City = data[3],
-                    State = data[4],
-                    Zip = data[5],
-                    PhoneNumber = data[6],
-                    Email = data[7]
-                };
-
-                book.AddContact(person);
+                    book.AddContact(person);
+                }
             }
 
-            Console.WriteLine("Contacts loaded from file.");
+            Console.WriteLine("Contacts loaded from CSV.");
         }
     }
 }
