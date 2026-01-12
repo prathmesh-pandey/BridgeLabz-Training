@@ -27,5 +27,14 @@ class CostOptimization
         Console.WriteLine("CustomRod Length: " + customLength);
         Console.WriteLine("Maximum revenue: " + revenueB);
 
+        //UC3: Calculating non opitimize revenue to show difference
+        int nonOptimizedRevenue = prices[8];
+
+        Console.WriteLine("Rod Length: 8");
+        Console.WriteLine("Non-Optimized Revenue : " + nonOptimizedRevenue);
+
+        Console.WriteLine("\nLoss due to no optimization:");
+        Console.WriteLine(maxRevenue - nonOptimizedRevenue);
+
     }
 }
