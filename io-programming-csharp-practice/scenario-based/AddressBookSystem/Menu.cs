@@ -34,6 +34,8 @@ namespace AddressBookSystem
                 Console.WriteLine("9. Sort Contacts");
                 Console.WriteLine("11. Save as CSV (Library)");
                 Console.WriteLine("12. Load from CSV (Library)");
+                Console.WriteLine("13. Save as JSON");
+                Console.WriteLine("14. Load from JSON");
                 Console.WriteLine("0. Exit");
                 Console.Write("Choose option: ");
 
@@ -82,6 +84,14 @@ namespace AddressBookSystem
                     case 12:
                         AddressBookFileIO.ReadFromCsv(currentBook, "contacts.csv");
                         break;
+                    case 13:
+                        AddressBookFileIO.WriteToJson(currentBook, "contacts.json");
+                        break;
+
+                    case 14:
+                        AddressBookFileIO.ReadFromJson(currentBook, "contacts.json");
+                        break;
+
 
                     case 0:
                         Console.WriteLine("Exiting...");
