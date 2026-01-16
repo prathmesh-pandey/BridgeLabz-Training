@@ -317,6 +317,60 @@ Heap Sort
 
 Counting Sort 🔢
 
+🟢 Day 26: January 12, 2026
+
+📌 Topics Covered:
+
+Metal Factory – Pipe Cutting (OOPS Scenario)
+
+StringBuilder, StringBuffer
+
+InputStreamReader, FileReader
+
+Linear Search and Binary Search
+
+🟢 Day 27: January 13, 2026
+
+📌 Topics Covered:
+
+Custom Furniture Manufacturing System
+
+LoanBuddy – Loan Approval Automation
+
+CinemaTime – Movie Schedule Manager
+
+BookBuddy – Digital Bookshelf App
+
+🟢 Day 28: January 14, 2026
+
+📌 Topics Covered:
+
+Runtime Analysis
+
+Big-O Notation
+
+Time Complexity Analysis
+
+Space Complexity Analysis
+
+Best, Worst, and Average Case Complexities
+
+Address Book Project
+
+LeetCode: Middle of the Linked List
+
+🟢 Day 29: January 15, 2026
+
+📌 Topics Covered:
+
+Address Book Project (All UCs Completed)
+
+BrowserBuddy – Tab History Manager
+
+Doubly Linked List
+
+Stack
+
 📌 Notes
 
 🖥️ All programs are console-based C# applications
