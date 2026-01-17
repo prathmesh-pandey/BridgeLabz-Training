@@ -49,5 +49,24 @@ public class AddressBook : IAddressBook
             Console.WriteLine("Contact not found.");
         }
     }
+    public void DeleteContact(string firstName)
+    
+    {
+    if (contact == null)
+    {
+        Console.WriteLine("No contact available to delete.");
+        return;
+    }
+
+    if (contact.FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase))
+    {
+        contact = null;
+        Console.WriteLine("Contact deleted successfully.\n");
+    }
+    else
+    {
+        Console.WriteLine("Contact not found.");
+    }
+}
 }
 }

@@ -18,6 +18,7 @@ namespace AddressBookSystem
                 Console.WriteLine("\n ADDRESS BOOK MENU ");
                 Console.WriteLine("1. Add Contact");
                 Console.WriteLine("2. Edit Contact");
+                Console.WriteLine("3. Delete Contact");
                 Console.WriteLine("0. Exit");
                 Console.Write("Choose option: ");
 
@@ -32,7 +33,9 @@ namespace AddressBookSystem
                     case 2:
                         EditContactFlow();
                         break;
-
+                    case 3:
+                         DeleteContactFlow();
+                         break;
                     case 0:
                         Console.WriteLine("Exiting...");
                         return;
@@ -84,5 +87,13 @@ namespace AddressBookSystem
 
             addressBook.EditContact(name);
         }
+        //UC 4
+        private void DeleteContactFlow()
+        {
+            Console.Write("Enter First Name to delete: ");
+            string name = Console.ReadLine();
+            addressBook.DeleteContact(name);
+            }
+
     }
 }
