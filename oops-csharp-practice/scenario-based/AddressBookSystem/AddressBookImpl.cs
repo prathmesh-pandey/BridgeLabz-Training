@@ -3,70 +3,88 @@ namespace AddressBookSystem
 {
 public class AddressBook : IAddressBook
 {
-    private ContactPerson contact;
+private ContactPerson[] contacts = new ContactPerson[100];
+private int contactCount = 0;
+
 //UC2
+
+//UC 5
     public void AddContact(ContactPerson person)
+{
+    if (contactCount >= contacts.Length)
     {
-        contact = person;
-        Console.WriteLine("Contact added successfully.\n");
+        Console.WriteLine("Address Book is full.");
+        return;
     }
 
-    //UC 3
-     public void EditContact(string firstName)
-    {
-        if (contact == null)
-        {
-            Console.WriteLine("No contact available to edit.");
-            return;
-        }
+    contacts[contactCount] = person;
+    contactCount++;
 
-        if (contact.FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase))
+    Console.WriteLine("Contact added successfully.\n");
+}
+
+
+    //UC 3
+
+    //UC 5
+     public void EditContact(string firstName)
+{
+    for (int i = 0; i < contactCount; i++)
+    {
+        if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase))
         {
             Console.WriteLine("Editing Contact...");
 
             Console.Write("Enter Address: ");
-            contact.Address = Console.ReadLine();
+            contacts[i].Address = Console.ReadLine();
 
             Console.Write("Enter City: ");
-            contact.City = Console.ReadLine();
+            contacts[i].City = Console.ReadLine();
 
             Console.Write("Enter State: ");
-            contact.State = Console.ReadLine();
+            contacts[i].State = Console.ReadLine();
 
             Console.Write("Enter Zip: ");
-            contact.Zip = Console.ReadLine();
+            contacts[i].Zip = Console.ReadLine();
 
             Console.Write("Enter Phone Number: ");
-            contact.PhoneNumber = Console.ReadLine();
+            contacts[i].PhoneNumber = Console.ReadLine();
 
             Console.Write("Enter Email: ");
-            contact.Email = Console.ReadLine();
+            contacts[i].Email = Console.ReadLine();
 
             Console.WriteLine("Contact updated successfully.\n");
+            return;
         }
-        else
-        {
-            Console.WriteLine("Contact not found.");
-        }
-    }
-    public void DeleteContact(string firstName)
-    
-    {
-    if (contact == null)
-    {
-        Console.WriteLine("No contact available to delete.");
-        return;
     }
 
-    if (contact.FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase))
-    {
-        contact = null;
-        Console.WriteLine("Contact deleted successfully.\n");
-    }
-    else
-    {
-        Console.WriteLine("Contact not found.");
-    }
+    Console.WriteLine("Contact not found.");
 }
+
+    //UC 4
+    
+    //UC 5
+   public void DeleteContact(string firstName)
+{
+    for (int i = 0; i < contactCount; i++)
+    {
+        if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase))
+        {
+            for (int j = i; j < contactCount - 1; j++)
+            {
+                contacts[j] = contacts[j + 1];
+            }
+
+            contacts[contactCount - 1] = null;
+            contactCount--;
+
+            Console.WriteLine("Contact deleted successfully.\n");
+            return;
+        }
+    }
+
+    Console.WriteLine("Contact not found.");
+}
+
 }
 }
