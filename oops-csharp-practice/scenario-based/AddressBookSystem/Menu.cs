@@ -5,6 +5,13 @@ namespace AddressBookSystem
     public class AddressBookMenu
     {
         private IAddressBook addressBook;
+        // UC6
+        private string[] bookNames = new string[10];
+        private IAddressBook[] books = new IAddressBook[10];
+        private int bookCount = 0;
+
+private IAddressBook currentBook = null;
+
 
         public AddressBookMenu(IAddressBook addressBook)
         {
@@ -19,6 +26,8 @@ namespace AddressBookSystem
                 Console.WriteLine("1. Add Contact");
                 Console.WriteLine("2. Edit Contact");
                 Console.WriteLine("3. Delete Contact");
+                Console.WriteLine("4. Create Address Book");
+                Console.WriteLine("5. Select Address Book");
                 Console.WriteLine("0. Exit");
                 Console.Write("Choose option: ");
 
@@ -36,6 +45,12 @@ namespace AddressBookSystem
                     case 3:
                          DeleteContactFlow();
                          break;
+                    case 4:
+                         CreateAddressBook();
+                         break;
+                    case 5:
+                         SelectAddressBook();
+                         break;
                     case 0:
                         Console.WriteLine("Exiting...");
                         return;
@@ -50,6 +65,12 @@ namespace AddressBookSystem
         //UC 2
         private void AddContactFlow()
         {
+            if (currentBook == null)
+            {
+                Console.WriteLine("Please select an Address Book first.");
+                return;
+                }
+
             ContactPerson person = new ContactPerson();
 
             Console.Write("Enter First Name: ");
@@ -76,24 +97,79 @@ namespace AddressBookSystem
             Console.Write("Enter Email: ");
             person.Email = Console.ReadLine();
 
-            addressBook.AddContact(person);
+            currentBook.AddContact(person);
         }
 
         //UC 3
         private void EditContactFlow()
         {
+            if (currentBook == null)
+            {
+                Console.WriteLine("Please select an Address Book first.");
+                return;
+                }
+
             Console.Write("Enter First Name to edit: ");
             string name = Console.ReadLine();
 
-            addressBook.EditContact(name);
+            currentBook.EditContact(name);
         }
         //UC 4
         private void DeleteContactFlow()
+        {if (currentBook == null)
         {
+            Console.WriteLine("Please select an Address Book first.");
+            return;
+            }
             Console.Write("Enter First Name to delete: ");
             string name = Console.ReadLine();
-            addressBook.DeleteContact(name);
+            currentBook.DeleteContact(name);
             }
+        
+        //UC 6
+        private void CreateAddressBook()
+{
+    Console.Write("Enter new Address Book name: ");
+    string name = Console.ReadLine();
 
+    // check duplicate
+    for (int i = 0; i < bookCount; i++)
+    {
+        if (bookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
+        {
+            Console.WriteLine("Address Book already exists.");
+            return;
+        }
+    }
+
+    if (bookCount >= books.Length)
+    {
+        Console.WriteLine("Cannot create more Address Books.");
+        return;
+    }
+
+    bookNames[bookCount] = name;
+    books[bookCount] = new AddressBook();
+    bookCount++;
+
+    Console.WriteLine("Address Book created.");
+}
+private void SelectAddressBook()
+{
+    Console.Write("Enter Address Book name: ");
+    string name = Console.ReadLine();
+
+    for (int i = 0; i < bookCount; i++)
+    {
+        if (bookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
+        {
+            currentBook = books[i];
+            Console.WriteLine($"Selected: {name}");
+            return;
+        }
+    }
+
+    Console.WriteLine("Address Book not found.");
+}
     }
 }
