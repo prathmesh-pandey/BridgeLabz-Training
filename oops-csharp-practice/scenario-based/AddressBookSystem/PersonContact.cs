@@ -59,5 +59,20 @@ namespace AddressBookSystem
             get { return email; }
             set { email = value; }
         }
-    }
-}
+        public override bool Equals(object obj)
+        {
+            if (obj == null || !(obj is ContactPerson))
+                return false;
+
+            ContactPerson other = (ContactPerson)obj;
+
+            return this.FirstName.Equals(other.FirstName, StringComparison.OrdinalIgnoreCase);
+        }
+
+        public override int GetHashCode()
+        {
+            return FirstName == null ? 0 : FirstName.ToLower().GetHashCode();
+        }
+
+            }
+        }
