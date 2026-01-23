@@ -371,6 +371,52 @@ Doubly Linked List
 
 Stack
 
+🟢 Day 30: January 16, 2025
+
+📌 Topics Covered:
+
+Traffic Manager – Scenario-based problem 🚦
+Implemented using DSA concepts, OOPS, and Core C#
+Used Circular Linked List as the primary data structure
+
+Book Shelf – Scenario-based problem 📚
+Implemented using DSA concepts, OOPS, and Core C#
+Used Linked List and HashMap for efficient data handling
+
+🟢 Day 31: January 17, 2025
+
+📌 Topics Covered:
+
+FlashDealz – Product Sorting by Discount 🛒
+Implemented Quick Sort for sorting products based on discount
+
+FitnessTracker – Daily Step Count Ranking 🏃
+Implemented Bubble Sort to rank users based on daily steps
+
+🟢 Day 32: January 19, 2025
+
+📌 Topics Covered:
+
+ParcelTracker – Delivery Chain Management 📦
+Implemented using Singly Linked List to track parcel flow
+
+ExamProctor – Online Exam Review System 📝
+Used Stack, HashMap, and Functions for managing answer review flow
+
+Completed C# Generics 🎯
+
+🟢 Day 33: January 20, 2025
+
+📌 Topics Covered:
+
+Practice problems related to Generics 🧩
+
+Sorting Aadhar Numbers – Scenario-based problem 🆔
+Implemented Radix Sort for large numerical data handling
+
+Password Cracker Simulator – Scenario-based problem 🔐
+Implemented Backtracking to explore all possible combinations
+
 📌 Notes
 
 🖥️ All programs are console-based C# applications
