@@ -30,6 +30,7 @@ namespace AddressBookSystem
                 Console.WriteLine("5. Select Address Book");
                 Console.WriteLine("6. Search by City/State");
                 Console.WriteLine("7. View Persons by City/State");
+                Console.WriteLine("8. Count by City/State");
                 Console.WriteLine("0. Exit");
                 Console.Write("Choose option: ");
 
@@ -40,7 +41,6 @@ namespace AddressBookSystem
                     case 1:
                         AddContactFlow();
                         break;
-
                     case 2:
                         EditContactFlow();
                         break;
@@ -58,6 +58,9 @@ namespace AddressBookSystem
                         break;
                     case 7:
                         ViewByCityOrStateFlow();
+                        break;
+                    case 8:
+                        CountByCityOrStateFlow();
                         break;
                     case 0:
                         Console.WriteLine("Exiting...");
@@ -249,6 +252,35 @@ namespace AddressBookSystem
                 Console.WriteLine("No records found.");
         }
 
+        //UC 10
+        private void CountByCityOrStateFlow()
+        {
+            Console.Write("Count by (city/state): ");
+            string type = Console.ReadLine();
 
+            Console.Write("Enter value: ");
+            string value = Console.ReadLine();
+
+            int total = 0;
+
+            for (int i = 0; i < bookCount; i++)
+            {
+                ContactPerson[] persons = books[i].GetContacts();
+                int count = books[i].GetContactCount();
+
+                for (int j = 0; j < count; j++)
+                {
+                    if (type.Equals("city", StringComparison.OrdinalIgnoreCase) &&
+                        persons[j].City.Equals(value, StringComparison.OrdinalIgnoreCase))
+                        total++;
+
+                    else if (type.Equals("state", StringComparison.OrdinalIgnoreCase) &&
+                             persons[j].State.Equals(value, StringComparison.OrdinalIgnoreCase))
+                        total++;
+                }
+            }
+
+            Console.WriteLine($"Total persons found: {total}");
+        }
     }
 }
