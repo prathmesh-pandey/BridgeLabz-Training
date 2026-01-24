@@ -93,6 +93,16 @@ namespace AddressBookSystem
 
             Console.WriteLine("Contact not found.");
         }
+        // UC8
+        public ContactPerson[] GetContacts()
+        {
+            return contacts;
+        }
+
+        public int GetContactCount()
+        {
+            return contactCount;
+        }
 
     }
 }

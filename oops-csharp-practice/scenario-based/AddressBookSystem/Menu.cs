@@ -10,7 +10,7 @@ namespace AddressBookSystem
         private IAddressBook[] books = new IAddressBook[10];
         private int bookCount = 0;
 
-private IAddressBook currentBook = null;
+        private IAddressBook currentBook = null;
 
 
         public AddressBookMenu(IAddressBook addressBook)
@@ -28,6 +28,8 @@ private IAddressBook currentBook = null;
                 Console.WriteLine("3. Delete Contact");
                 Console.WriteLine("4. Create Address Book");
                 Console.WriteLine("5. Select Address Book");
+                Console.WriteLine("6. Search by City/State");
+
                 Console.WriteLine("0. Exit");
                 Console.Write("Choose option: ");
 
@@ -43,14 +45,17 @@ private IAddressBook currentBook = null;
                         EditContactFlow();
                         break;
                     case 3:
-                         DeleteContactFlow();
-                         break;
+                        DeleteContactFlow();
+                        break;
                     case 4:
-                         CreateAddressBook();
-                         break;
+                        CreateAddressBook();
+                        break;
                     case 5:
-                         SelectAddressBook();
-                         break;
+                        SelectAddressBook();
+                        break;
+                    case 6:
+                        SearchPersonFlow();
+                        break;
                     case 0:
                         Console.WriteLine("Exiting...");
                         return;
@@ -69,7 +74,7 @@ private IAddressBook currentBook = null;
             {
                 Console.WriteLine("Please select an Address Book first.");
                 return;
-                }
+            }
 
             ContactPerson person = new ContactPerson();
 
@@ -107,7 +112,7 @@ private IAddressBook currentBook = null;
             {
                 Console.WriteLine("Please select an Address Book first.");
                 return;
-                }
+            }
 
             Console.Write("Enter First Name to edit: ");
             string name = Console.ReadLine();
@@ -116,60 +121,90 @@ private IAddressBook currentBook = null;
         }
         //UC 4
         private void DeleteContactFlow()
-        {if (currentBook == null)
         {
-            Console.WriteLine("Please select an Address Book first.");
-            return;
+            if (currentBook == null)
+            {
+                Console.WriteLine("Please select an Address Book first.");
+                return;
             }
             Console.Write("Enter First Name to delete: ");
             string name = Console.ReadLine();
             currentBook.DeleteContact(name);
-            }
-        
+        }
+
         //UC 6
         private void CreateAddressBook()
-{
-    Console.Write("Enter new Address Book name: ");
-    string name = Console.ReadLine();
-
-    // check duplicate
-    for (int i = 0; i < bookCount; i++)
-    {
-        if (bookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
         {
-            Console.WriteLine("Address Book already exists.");
-            return;
+            Console.Write("Enter new Address Book name: ");
+            string name = Console.ReadLine();
+
+            // check duplicate
+            for (int i = 0; i < bookCount; i++)
+            {
+                if (bookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Address Book already exists.");
+                    return;
+                }
+            }
+
+            if (bookCount >= books.Length)
+            {
+                Console.WriteLine("Cannot create more Address Books.");
+                return;
+            }
+
+            bookNames[bookCount] = name;
+            books[bookCount] = new AddressBook();
+            bookCount++;
+
+            Console.WriteLine("Address Book created.");
         }
-    }
-
-    if (bookCount >= books.Length)
-    {
-        Console.WriteLine("Cannot create more Address Books.");
-        return;
-    }
-
-    bookNames[bookCount] = name;
-    books[bookCount] = new AddressBook();
-    bookCount++;
-
-    Console.WriteLine("Address Book created.");
-}
-private void SelectAddressBook()
-{
-    Console.Write("Enter Address Book name: ");
-    string name = Console.ReadLine();
-
-    for (int i = 0; i < bookCount; i++)
-    {
-        if (bookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
+        private void SelectAddressBook()
         {
-            currentBook = books[i];
-            Console.WriteLine($"Selected: {name}");
-            return;
-        }
-    }
+            Console.Write("Enter Address Book name: ");
+            string name = Console.ReadLine();
 
-    Console.WriteLine("Address Book not found.");
-}
+            for (int i = 0; i < bookCount; i++)
+            {
+                if (bookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    currentBook = books[i];
+                    Console.WriteLine($"Selected: {name}");
+                    return;
+                }
+            }
+
+            Console.WriteLine("Address Book not found.");
+        }
+        private void SearchPersonFlow()
+        {
+            Console.Write("Enter City or State: ");
+            string input = Console.ReadLine();
+
+            bool found = false;
+
+            for (int i = 0; i < bookCount; i++)
+            {
+                ContactPerson[] persons = books[i].GetContacts();
+                int count = books[i].GetContactCount();
+
+                for (int j = 0; j < count; j++)
+                {
+                    if (persons[j].City.Equals(input, StringComparison.OrdinalIgnoreCase) ||
+                        persons[j].State.Equals(input, StringComparison.OrdinalIgnoreCase))
+                    {
+                        Console.WriteLine(
+                            $"Found in Book: {bookNames[i]} → {persons[j].FirstName} {persons[j].LastName}");
+
+                        found = true;
+                    }
+                }
+            }
+
+            if (!found)
+                Console.WriteLine("No matching contacts found.");
+        }
+
     }
 }
