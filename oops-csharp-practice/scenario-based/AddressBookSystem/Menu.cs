@@ -29,7 +29,7 @@ namespace AddressBookSystem
                 Console.WriteLine("4. Create Address Book");
                 Console.WriteLine("5. Select Address Book");
                 Console.WriteLine("6. Search by City/State");
-
+                Console.WriteLine("7. View Persons by City/State");
                 Console.WriteLine("0. Exit");
                 Console.Write("Choose option: ");
 
@@ -55,6 +55,9 @@ namespace AddressBookSystem
                         break;
                     case 6:
                         SearchPersonFlow();
+                        break;
+                    case 7:
+                        ViewByCityOrStateFlow();
                         break;
                     case 0:
                         Console.WriteLine("Exiting...");
@@ -177,6 +180,8 @@ namespace AddressBookSystem
 
             Console.WriteLine("Address Book not found.");
         }
+
+        //UC 8
         private void SearchPersonFlow()
         {
             Console.Write("Enter City or State: ");
@@ -205,6 +210,45 @@ namespace AddressBookSystem
             if (!found)
                 Console.WriteLine("No matching contacts found.");
         }
+
+        //UC 9
+        private void ViewByCityOrStateFlow()
+        {
+            Console.Write("View by (city/state): ");
+            string type = Console.ReadLine();
+
+            Console.Write("Enter value: ");
+            string value = Console.ReadLine();
+
+            bool found = false;
+
+            for (int i = 0; i < bookCount; i++)
+            {
+                ContactPerson[] persons = books[i].GetContacts();
+                int count = books[i].GetContactCount();
+
+                for (int j = 0; j < count; j++)
+                {
+                    bool match = false;
+
+                    if (type.Equals("city", StringComparison.OrdinalIgnoreCase))
+                        match = persons[j].City.Equals(value, StringComparison.OrdinalIgnoreCase);
+
+                    else if (type.Equals("state", StringComparison.OrdinalIgnoreCase))
+                        match = persons[j].State.Equals(value, StringComparison.OrdinalIgnoreCase);
+
+                    if (match)
+                    {
+                        Console.WriteLine($"Book: {bookNames[i]} → {persons[j].FirstName} {persons[j].LastName}");
+                        found = true;
+                    }
+                }
+            }
+
+            if (!found)
+                Console.WriteLine("No records found.");
+        }
+
 
     }
 }
