@@ -417,6 +417,148 @@ Implemented Radix Sort for large numerical data handling
 Password Cracker Simulator – Scenario-based problem 🔐
 Implemented Backtracking to explore all possible combinations
 
+🟢 Day 34: January 21, 2026
+
+📌 Topics Covered:
+
+EduResults – Rank Sheet Generator 📊
+Scenario-based problem implemented using Merge Sort
+
+SmartCheckout – Supermarket Billing Queue 🛒
+Scenario-based problem implemented using Queue and HashMap
+
+Set Interface and its implementing classes
+Queue and Deque interfaces
+Map interface and its implementations
+
+Comparison of different implementations
+Real-world use cases and best practices
+
+🟢 Day 35: January 22, 2026
+
+📌 Topics Covered:
+
+AmbulanceRoute – Emergency Patient Navigation 🚑
+Scenario-based problem implemented using Circular Linked List
+
+C# I/O Streams
+Types of streams
+
+File streams
+Object streams
+ByteArray streams
+Buffered streams
+
+Reader and Writer
+Key considerations while working with streams
+
+🟢 Day 36: January 23, 2026
+
+📌 Topics Covered:
+
+Exception Handling in C# ⚠️
+
+Types of exceptions
+Checked exceptions
+Unchecked exceptions
+
+Custom exceptions
+Handling exceptions
+
+try-catch blocks
+try-catch-finally blocks
+try-with-resources statement
+
+throws clause
+throw statement
+
+Creating custom exceptions
+Extending the Exception class
+Defining constructors
+
+🟢 Day 37: January 26, 2026
+
+📌 Topics Covered:
+
+Regular Expressions (Regex) 🔍
+Metacharacters and quantifiers
+
+Common patterns:
+Email validation
+Password strength validation
+Phone number format
+
+C# Regex API
+Pattern and Matcher
+
+Regex methods:
+find()
+matches()
+replaceAll()
+
+Introduction to NUnit Framework 🧪
+NUnit annotations
+Writing test cases
+
+Structure of a test class
+Assertions
+
+🟢 Day 38: January 27, 2026
+
+📌 Topics Covered:
+
+Introduction to annotations
+
+Common built-in annotations
+Creating custom annotations
+
+Advanced custom annotations
+Real-world use cases
+
+Annotation processing tools
+
+Reflection 🔁
+Understanding reflection
+Using reflection in .NET
+
+Annotations and reflection
+
+🟢 Day 39: January 28, 2026
+
+📌 Topics Covered:
+
+Introduction to CSV 📄
+
+Reading CSV files
+Writing CSV files
+
+Parsing CSV data
+Data validation
+
+🟢 Day 40: January 29, 2026
+
+📌 Topics Covered:
+
+Introduction to JSON 🧾
+
+Reading JSON data
+Writing JSON data
+
+Parsing JSON data
+JSON schema validation
+
+🟢 Day 41: January 30, 2026
+
+📌 Topics Covered:
+
+Lexical Twist – Scenario-based problem 🧠
+
+🟢 Day 42: January 31, 2026
+
+📌 Topics Covered:
+
+Future Logistics – Scenario-based problem 🚚
+
 📌 Notes
 
 🖥️ All programs are console-based C# applications
