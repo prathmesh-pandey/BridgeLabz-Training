@@ -8,7 +8,7 @@ namespace AddressBookSystem
         {
             Console.WriteLine("Welcome to Address Book Program\n");
 
-            AddressBook addressBook = new AddressBook();
+            IAddressBook addressBook = new AddressBook();
             ContactPerson person = new ContactPerson();
 
             Console.Write("Enter First Name: ");
