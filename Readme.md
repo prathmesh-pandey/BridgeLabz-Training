@@ -559,6 +559,133 @@ Lexical Twist – Scenario-based problem 🧠
 
 Future Logistics – Scenario-based problem 🚚
 
+🟢 Day 43: February 02, 2026 — OOP Design Principles
+
+📌 Topics Covered:
+
+OOP Design Principles
+SOLID Principles
+KISS, DRY, DIY
+
+📚 What I Learned:
+
+SRP – One class, one responsibility.
+OCP – Extend without modifying existing code.
+LSP – Subclasses should not break base class behavior.
+ISP – Use small, specific interfaces.
+DIP – Depend on abstractions, not concrete implementations.
+
+KISS – Keep design simple.
+DRY – Avoid duplicate logic.
+DIY – Implement concepts hands-on for better understanding.
+
+🟢 Day 44: February 03, 2026 — Design Patterns
+
+📌 Topics Covered:
+
+Introduction to Design Patterns
+Creational, Structural, Behavioral patterns
+
+📚 What I Learned:
+
+Design patterns provide reusable solutions for common design problems.
+
+Creational:
+Singleton, Factory Method, Abstract Factory, Builder, Prototype
+
+Structural:
+Adapter, Bridge, Composite, Decorator, Facade, Proxy
+
+Behavioral:
+Observer, Strategy, Command, State, Template Method, Iterator, Mediator
+
+Benefits: Better maintainability, scalability, and cleaner architecture.
+
+🟢 Day 45: February 04, 2026 — Multithreading in .NET
+
+📌 Topics Covered:
+
+Threads vs Tasks
+ThreadPool & TPL
+async/await
+Synchronization
+
+📚 What I Learned:
+
+Thread – Low-level, manually managed.
+Task – High-level, recommended approach.
+
+Handled concurrency using:
+lock, Mutex, Semaphore, Interlocked, Concurrent Collections
+
+Covered issues like race conditions and deadlocks.
+Followed best practices for async and parallel programming.
+
+🟢 Day 46: February 05, 2026 — SQL & RDBMS Concepts
+
+📌 Topics Covered:
+
+Database design & normalization
+Keys & constraints
+SQL queries & joins
+Transactions (ACID)
+Indexing & optimization
+
+📚 What I Learned:
+
+Built strong fundamentals in relational database design and query optimization for scalable systems.
+
+🟢 Day 47: February 06, 2026 — Microsoft SQL Server (MSSQL) Concepts
+
+📌 Topics Covered:
+
+Constraints & keys
+Joins & subqueries
+Aggregate functions
+Stored procedures & functions
+Views & cursors
+DCL commands
+
+📚 What I Learned:
+
+Practical implementation of enterprise-level database concepts using MSSQL.
+
+🟢 Day 48: February 07, 2026 — Practical SQL Implementation
+
+📌 Topics Covered:
+
+Solved practical problems on SQL & RDBMS concepts
+
+📚 What I Learned:
+
+Strengthened understanding of normalization, joins, transactions, procedures, optimization, and security through hands-on implementation.
+
+🟢 Day 49: February 09, 2026 — Health Care Database Project
+
+📌 Topics Covered:
+
+Hospital Management System database design
+Tables, relationships, constraints
+Core modules implementation
+
+📚 What I Learned:
+
+Applied SQL concepts in a real-world structured project covering patients, doctors, appointments, visits, and billing.
+
+🟢 Day 50: February 10–12, 2026 — Health Care Project Implementation
+
+📌 Modules Implemented:
+
+Patient Management
+Doctor Management
+Appointment Scheduling
+Visit & Medical Records
+Billing & Payments
+
+📚 What I Learned:
+
+Implemented real-world use cases using transactions, joins, stored procedures, constraints, and performance-focused queries.
+
 📌 Notes
 
 🖥️ All programs are console-based C# applications
