@@ -1,695 +1,736 @@
-🚀 BridgeLabz-Training
+# 🚀 BridgeLabz-Training
 
 Welcome to my BridgeLabz-Training repository! 👋
 
 This repository documents my daily learning progress and hands-on practice during the BridgeLabz Training Program. It focuses on building strong foundations in:
 
-🧠 Programming Fundamentals
-
-💻 Core C# & .NET
-
-🧩 Object-Oriented Programming (OOP)
-
-📊 Data Structures & Algorithms
-
-🛠️ Scenario-based Problem Solving
-
-🌱 Version Control with Git & GitHub
+🧠 Programming Fundamentals  
+💻 Core C# & .NET  
+🧩 Object-Oriented Programming (OOP)  
+📊 Data Structures & Algorithms  
+🛠️ Scenario-based Problem Solving  
+🌱 Version Control with Git & GitHub  
 
 The goal of this repository is to maintain consistent learning, improve problem-solving skills, and develop industry-ready software development practices.
 
-📅 Daily Learning Log
-🟢 Day 1: December 16, 2025 — Git Setup & Version Control
+---
 
-📌 Topics Covered:
+## 📅 Daily Learning Log
 
-Git installation & configuration ⚙️
+### 🟢 Day 1: December 16, 2025 — Git Setup & Version Control
 
-GitHub repository creation 🌐
+#### 📌 Topics Covered:
 
-Basic Git commands
+Git installation & configuration ⚙️  
+GitHub repository creation 🌐  
+Basic Git commands  
 
-📚 What I Learned:
+#### 📚 What I Learned:
 
-Initializing repositories using git init
+Initializing repositories using git init  
+Tracking changes using git add & git commit  
+Pushing code to GitHub using git push  
 
-Tracking changes using git add & git commit
+---
 
-Pushing code to GitHub using git push
+### 🟢 Day 2: December 17, 2025 — Java Fundamentals
 
-🟢 Day 2: December 17, 2025 — Java Fundamentals
+#### 📌 Topics Covered:
 
-📌 Topics Covered:
+Java basics ☕  
+Logical problem solving  
 
-Java basics ☕
+#### 📚 What I Learned:
 
-Logical problem solving
+Writing basic Java programs  
+Applying logic to solve beginner-level problems  
 
-📚 What I Learned:
+---
 
-Writing basic Java programs
+### 🟢 Day 3: December 18, 2025 — Introduction to C# & .NET
 
-Applying logic to solve beginner-level problems
+#### 📌 Topics Covered:
 
-🟢 Day 3: December 18, 2025 — Introduction to C# & .NET
+Overview of C# language  
+C# Compiler & Common Intermediate Language (CIL)  
+.NET architecture 🧩  
 
-📌 Topics Covered:
+#### 📚 What I Learned:
 
-Overview of C# language
+How C# code is compiled and executed  
+Understanding the .NET ecosystem  
 
-C# Compiler & Common Intermediate Language (CIL)
+---
 
-.NET architecture 🧩
+### 🟢 Day 4: December 19, 2025 — C# Basics
 
-📚 What I Learned:
+#### 📌 Topics Covered:
 
-How C# code is compiled and executed
+Data types & variables  
+Operators  
+Type conversion  
+User input handling  
 
-Understanding the .NET ecosystem
+#### 📚 What I Learned:
 
-🟢 Day 4: December 19, 2025 — C# Basics
+Using Console.ReadLine() for input  
+Performing casting and conversions  
+Working with expressions and operators  
 
-📌 Topics Covered:
+---
 
-Data types & variables
+### 🟢 Day 5: December 20, 2025 — Access Modifiers
 
-Operators
+#### 📌 Topics Covered:
 
-Type conversion
+public, private, protected  
+internal, protected internal, private protected 🔐  
 
-User input handling
+#### 📚 What I Learned:
 
-📚 What I Learned:
+Understanding scope & accessibility in C#  
+Applying access control correctly  
 
-Using Console.ReadLine() for input
+---
 
-Performing casting and conversions
+### 🟢 Day 6: December 22, 2025 — Control Flow
 
-Working with expressions and operators
+#### 📌 Topics Covered:
 
-🟢 Day 5: December 20, 2025 — Access Modifiers
+Boolean expressions  
+Logical operators  
+if–else ladder  
+Loops (for, while) 🔁  
+break, continue, switch  
 
-📌 Topics Covered:
+---
 
-public, private, protected
+### 🟢 Day 7: December 23, 2025 — Arrays
 
-internal, protected internal, private protected 🔐
+#### 📌 Topics Covered:
 
-📚 What I Learned:
+Single-dimensional arrays  
+Multidimensional arrays  
+2D arrays (Matrix) 📐  
 
-Understanding scope & accessibility in C#
+#### 📚 What I Learned:
 
-Applying access control correctly
+Iterating through arrays  
+Performing array-based operations  
 
-🟢 Day 6: December 22, 2025 — Control Flow
+---
 
-📌 Topics Covered:
+### 🟢 Day 8: December 24, 2025 — Methods
 
-Boolean expressions
+#### 📌 Topics Covered:
 
-Logical operators
+User-defined methods  
+Static & recursive methods  
+.NET built-in methods  
+System.Math class ➗  
 
-if–else ladder
+---
 
-Loops (for, while) 🔁
+### 🟢 Day 9: December 25, 2025 — Method-Based Problem Solving
 
-break, continue, switch
+#### 📌 Topics Covered:
 
-🟢 Day 7: December 23, 2025 — Arrays
+Level 1, Level 2, Level 3 problems 🧠  
 
-📌 Topics Covered:
+---
 
-Single-dimensional arrays
+### 🟢 Day 10: December 26, 2025 — Strings
 
-Multidimensional arrays
+#### 📌 Topics Covered:
 
-2D arrays (Matrix) 📐
+String handling  
+String arrays  
+Built-in string methods ✨  
 
-📚 What I Learned:
+---
 
-Iterating through arrays
+### 🟢 Day 11: December 27, 2025 — Exception Handling
 
-Performing array-based operations
+#### 📌 Topics Covered:
 
-🟢 Day 8: December 24, 2025 — Methods
+ASCII character codes  
+Exception hierarchy  
+Checked vs unchecked exceptions ⚠️  
 
-📌 Topics Covered:
+---
 
-User-defined methods
+### 🟢 Day 12: December 28, 2025 — Date & Time
 
-Static & recursive methods
+#### 📌 Topics Covered:
 
-.NET built-in methods
+Date & time functions ⏰  
+Built-in utility functions  
+String-based problem solving  
 
-System.Math class ➗
+---
 
-🟢 Day 9: December 25, 2025 — Method-Based Problem Solving
+### 🟢 Day 13: December 29, 2025 — Scenario-Based Problems
 
-📌 Topics Covered:
+#### 📌 Topics Covered:
 
-Level 1, Level 2, Level 3 problems 🧠
+Snake and Ladder 🎲  
+Sentence Formatter & Text Analyzer  
+Temperature Analyzer 🌡️  
+Student Score Manager  
 
-🟢 Day 10: December 26, 2025 — Strings
+---
+### 🟢 Day 14: December 30, 2025 — OOP Basics
 
-📌 Topics Covered:
+#### 📌 Topics Covered:
 
-String handling
+Library Management System 📚  
+EduQuiz – Student Quiz Grader  
+Classes & Objects  
 
-String arrays
+---
 
-Built-in string methods ✨
+### 🟢 Day 15: December 31, 2025 — Constructors & OOP
 
-🟢 Day 11: December 27, 2025 — Exception Handling
+#### 📌 Topics Covered:
 
-📌 Topics Covered:
+Bank Account Manager 💰  
+Invoice Generator  
+Constructors  
+Instance vs class variables  
 
-ASCII character codes
+---
 
-Exception hierarchy
+### 🟢 Day 16: January 01, 2026 — Advanced Keywords
 
-Checked vs unchecked exceptions ⚠️
+#### 📌 Topics Covered:
 
-🟢 Day 12: December 28, 2025 — Date & Time
+Cafeteria Menu App 🍽️  
+sealed, static keywords  
+is operator  
+Lab practice (Level 1)  
 
-📌 Topics Covered:
+---
 
-Date & time functions ⏰
+### 🟢 Day 17: January 02, 2026 — Object Modeling
 
-Built-in utility functions
+#### 📌 Topics Covered:
 
-String-based problem solving
+Bus Route Distance Tracker 🚌  
+Festival Lucky Draw 🎉  
+Class, object & sequence diagrams  
 
-🟢 Day 13: December 29, 2025 — Scenario-Based Problems
+---
 
-📌 Topics Covered:
+### 🟢 Day 18: January 03, 2026 — Inheritance
 
-Snake and Ladder 🎲
+#### 📌 Topics Covered:
 
-Sentence Formatter & Text Analyzer
+Single, multilevel & hierarchical inheritance  
+Method overriding  
+Constructor inheritance  
+Polymorphism 🔁  
 
-Temperature Analyzer 🌡️
+---
 
-Student Score Manager
+### 🟢 Day 19: January 04, 2026 — Advanced Inheritance
 
-🟢 Day 14: December 30, 2025 — OOP Basics
+#### 📌 Topics Covered:
 
-📌 Topics Covered:
+Hybrid inheritance  
+Inheritance-based problem solving  
 
-Library Management System 📚
+---
 
-EduQuiz – Student Quiz Grader
+### 🟢 Day 20: January 05, 2026 — Encapsulation & Polymorphism
 
-Classes & Objects
+#### 📌 Topics Covered:
 
-🟢 Day 15: December 31, 2025 — Constructors & OOP
+Hospital Patient Management System 🏥  
+Vehicle Rental Application 🚗  
 
-📌 Topics Covered:
+---
 
-Bank Account Manager 💰
+### 🟢 Day 21: January 06, 2026 — Interfaces & Abstraction
 
-Invoice Generator
+#### 📌 Topics Covered:
 
-Constructors
+Bird Sanctuary System 🐦  
+Customer Service Call Log Manager  
+Interfaces & abstract classes  
 
-Instance vs class variables
+---
 
-🟢 Day 16: January 01, 2026 — Advanced Keywords
+### 🟢 Day 22: January 07, 2026 — OOP Practice
 
-📌 Topics Covered:
+#### 📌 Topics Covered:
 
-Cafeteria Menu App 🍽️
+Employee Wage Computation System 💼  
+OOP-based problem solving  
 
-sealed, static keywords
+---
 
-is operator
+### 🟢 Day 23: January 08, 2026 — Data Structures Introduction
 
-Lab practice (Level 1)
+#### 📌 Topics Covered:
 
-🟢 Day 17: January 02, 2026 — Object Modeling
+Smart Home Automation System 🏠  
+Linked Lists (Singly, Doubly, Circular)  
 
-📌 Topics Covered:
+---
 
-Bus Route Distance Tracker 🚌
+### 🟢 Day 24: January 09, 2026 — DSA Applications
 
-Festival Lucky Draw 🎉
+#### 📌 Topics Covered:
 
-Class, object & sequence diagrams
+FitTrack – OOP-based project 🏋️  
+ATM Dispenser Logic 🏧  
+Stack, Queue, HashMap, Hashing  
 
-🟢 Day 18: January 03, 2026 — Inheritance
+---
 
-📌 Topics Covered:
+### 🟢 Day 25: January 11, 2026 — Sorting Algorithms
 
-Single, multilevel & hierarchical inheritance
+#### 📌 Topics Covered:
 
-Method overriding
+Bubble Sort  
+Insertion Sort  
+Selection Sort  
+Merge Sort  
+Quick Sort  
+Heap Sort  
+Counting Sort 🔢  
 
-Constructor inheritance
+---
 
-Polymorphism 🔁
+### 🟢 Day 26: January 12, 2026
 
-🟢 Day 19: January 04, 2026 — Advanced Inheritance
+#### 📌 Topics Covered:
 
-📌 Topics Covered:
+Metal Factory – Pipe Cutting (OOPS Scenario)  
+StringBuilder, StringBuffer  
+InputStreamReader, FileReader  
+Linear Search and Binary Search  
 
-Hybrid inheritance
+---
 
-Inheritance-based problem solving
+### 🟢 Day 27: January 13, 2026
 
-🟢 Day 20: January 05, 2026 — Encapsulation & Polymorphism
+#### 📌 Topics Covered:
 
-📌 Topics Covered:
+Custom Furniture Manufacturing System  
+LoanBuddy – Loan Approval Automation  
+CinemaTime – Movie Schedule Manager  
+BookBuddy – Digital Bookshelf App  
 
-Hospital Patient Management System 🏥
+---
 
-Vehicle Rental Application 🚗
+### 🟢 Day 28: January 14, 2026
 
-🟢 Day 21: January 06, 2026 — Interfaces & Abstraction
+#### 📌 Topics Covered:
 
-📌 Topics Covered:
+Runtime Analysis  
+Big-O Notation  
+Time Complexity Analysis  
+Space Complexity Analysis  
+Best, Worst, and Average Case Complexities  
+Address Book Project  
+LeetCode: Middle of the Linked List  
 
-Bird Sanctuary System 🐦
+---
 
-Customer Service Call Log Manager
+### 🟢 Day 29: January 15, 2026
 
-Interfaces & abstract classes
+#### 📌 Topics Covered:
 
-🟢 Day 22: January 07, 2026 — OOP Practice
+Address Book Project (All UCs Completed)  
+BrowserBuddy – Tab History Manager  
+Doubly Linked List  
+Stack  
 
-📌 Topics Covered:
+---
 
-Employee Wage Computation System 💼
+### 🟢 Day 30: January 16, 2025
 
-OOP-based problem solving
+#### 📌 Topics Covered:
 
-🟢 Day 23: January 08, 2026 — Data Structures Introduction
+Traffic Manager – Scenario-based problem 🚦  
+Implemented using DSA concepts, OOPS, and Core C#  
+Used Circular Linked List as the primary data structure  
 
-📌 Topics Covered:
+Book Shelf – Scenario-based problem 📚  
+Implemented using DSA concepts, OOPS, and Core C#  
+Used Linked List and HashMap for efficient data handling  
 
-Smart Home Automation System 🏠
+---
 
-Linked Lists (Singly, Doubly, Circular)
+### 🟢 Day 31: January 17, 2025
 
-🟢 Day 24: January 09, 2026 — DSA Applications
+#### 📌 Topics Covered:
 
-📌 Topics Covered:
+FlashDealz – Product Sorting by Discount 🛒  
+Implemented Quick Sort for sorting products based on discount  
 
-FitTrack – OOP-based project 🏋️
+FitnessTracker – Daily Step Count Ranking 🏃  
+Implemented Bubble Sort to rank users based on daily steps  
 
-ATM Dispenser Logic 🏧
+---
 
-Stack, Queue, HashMap, Hashing
+### 🟢 Day 32: January 19, 2025
 
-🟢 Day 25: January 11, 2026 — Sorting Algorithms
+#### 📌 Topics Covered:
 
-📌 Topics Covered:
+ParcelTracker – Delivery Chain Management 📦  
+Implemented using Singly Linked List to track parcel flow  
 
-Bubble Sort
+ExamProctor – Online Exam Review System 📝  
+Used Stack, HashMap, and Functions for managing answer review flow  
 
-Insertion Sort
+Completed C# Generics 🎯  
 
-Selection Sort
+---
 
-Merge Sort
+### 🟢 Day 33: January 20, 2025
 
-Quick Sort
+#### 📌 Topics Covered:
 
-Heap Sort
+Practice problems related to Generics 🧩  
 
-Counting Sort 🔢
+Sorting Aadhar Numbers – Scenario-based problem 🆔  
+Implemented Radix Sort for large numerical data handling  
 
-🟢 Day 26: January 12, 2026
+Password Cracker Simulator – Scenario-based problem 🔐  
+Implemented Backtracking to explore all possible combinations  
 
-📌 Topics Covered:
+---
 
-Metal Factory – Pipe Cutting (OOPS Scenario)
+### 🟢 Day 34: January 21, 2026
 
-StringBuilder, StringBuffer
+#### 📌 Topics Covered:
 
-InputStreamReader, FileReader
+EduResults – Rank Sheet Generator 📊  
+Scenario-based problem implemented using Merge Sort  
 
-Linear Search and Binary Search
+SmartCheckout – Supermarket Billing Queue 🛒  
+Scenario-based problem implemented using Queue and HashMap  
 
-🟢 Day 27: January 13, 2026
+Set Interface and its implementing classes  
+Queue and Deque interfaces  
+Map interface and its implementations  
 
-📌 Topics Covered:
+Comparison of different implementations  
+Real-world use cases and best practices  
 
-Custom Furniture Manufacturing System
+---
 
-LoanBuddy – Loan Approval Automation
+### 🟢 Day 35: January 22, 2026
 
-CinemaTime – Movie Schedule Manager
+#### 📌 Topics Covered:
 
-BookBuddy – Digital Bookshelf App
+AmbulanceRoute – Emergency Patient Navigation 🚑  
+Scenario-based problem implemented using Circular Linked List  
 
-🟢 Day 28: January 14, 2026
+C# I/O Streams  
+Types of streams  
 
-📌 Topics Covered:
+File streams  
+Object streams  
+ByteArray streams  
+Buffered streams  
 
-Runtime Analysis
+Reader and Writer  
+Key considerations while working with streams  
 
-Big-O Notation
+---
 
-Time Complexity Analysis
+### 🟢 Day 36: January 23, 2026
 
-Space Complexity Analysis
+#### 📌 Topics Covered:
 
-Best, Worst, and Average Case Complexities
+Exception Handling in C# ⚠️  
 
-Address Book Project
+Types of exceptions  
+Checked exceptions  
+Unchecked exceptions  
 
-LeetCode: Middle of the Linked List
+Custom exceptions  
+Handling exceptions  
 
-🟢 Day 29: January 15, 2026
+try-catch blocks  
+try-catch-finally blocks  
+try-with-resources statement  
 
-📌 Topics Covered:
+throws clause  
+throw statement  
 
-Address Book Project (All UCs Completed)
+Creating custom exceptions  
+Extending the Exception class  
+Defining constructors  
 
-BrowserBuddy – Tab History Manager
+---
+### 🟢 Day 37: January 26, 2026
 
-Doubly Linked List
+#### 📌 Topics Covered:
 
-Stack
+Regular Expressions (Regex) 🔍  
+Metacharacters and quantifiers  
 
-🟢 Day 30: January 16, 2025
+Common patterns:  
+Email validation  
+Password strength validation  
+Phone number format  
 
-📌 Topics Covered:
+C# Regex API  
+Pattern and Matcher  
 
-Traffic Manager – Scenario-based problem 🚦
-Implemented using DSA concepts, OOPS, and Core C#
-Used Circular Linked List as the primary data structure
+Regex methods:  
+find()  
+matches()  
+replaceAll()  
 
-Book Shelf – Scenario-based problem 📚
-Implemented using DSA concepts, OOPS, and Core C#
-Used Linked List and HashMap for efficient data handling
+Introduction to NUnit Framework 🧪  
+NUnit annotations  
+Writing test cases  
 
-🟢 Day 31: January 17, 2025
+Structure of a test class  
+Assertions  
 
-📌 Topics Covered:
+---
 
-FlashDealz – Product Sorting by Discount 🛒
-Implemented Quick Sort for sorting products based on discount
+### 🟢 Day 38: January 27, 2026
 
-FitnessTracker – Daily Step Count Ranking 🏃
-Implemented Bubble Sort to rank users based on daily steps
+#### 📌 Topics Covered:
 
-🟢 Day 32: January 19, 2025
+Introduction to annotations  
 
-📌 Topics Covered:
+Common built-in annotations  
+Creating custom annotations  
 
-ParcelTracker – Delivery Chain Management 📦
-Implemented using Singly Linked List to track parcel flow
+Advanced custom annotations  
+Real-world use cases  
 
-ExamProctor – Online Exam Review System 📝
-Used Stack, HashMap, and Functions for managing answer review flow
+Annotation processing tools  
 
-Completed C# Generics 🎯
+Reflection 🔁  
+Understanding reflection  
+Using reflection in .NET  
 
-🟢 Day 33: January 20, 2025
+Annotations and reflection  
 
-📌 Topics Covered:
+---
 
-Practice problems related to Generics 🧩
+### 🟢 Day 39: January 28, 2026
 
-Sorting Aadhar Numbers – Scenario-based problem 🆔
-Implemented Radix Sort for large numerical data handling
+#### 📌 Topics Covered:
 
-Password Cracker Simulator – Scenario-based problem 🔐
-Implemented Backtracking to explore all possible combinations
+Introduction to CSV 📄  
 
-🟢 Day 34: January 21, 2026
+Reading CSV files  
+Writing CSV files  
 
-📌 Topics Covered:
+Parsing CSV data  
+Data validation  
 
-EduResults – Rank Sheet Generator 📊
-Scenario-based problem implemented using Merge Sort
+---
 
-SmartCheckout – Supermarket Billing Queue 🛒
-Scenario-based problem implemented using Queue and HashMap
+### 🟢 Day 40: January 29, 2026
 
-Set Interface and its implementing classes
-Queue and Deque interfaces
-Map interface and its implementations
+#### 📌 Topics Covered:
 
-Comparison of different implementations
-Real-world use cases and best practices
+Introduction to JSON 🧾  
 
-🟢 Day 35: January 22, 2026
+Reading JSON data  
+Writing JSON data  
 
-📌 Topics Covered:
+Parsing JSON data  
+JSON schema validation  
 
-AmbulanceRoute – Emergency Patient Navigation 🚑
-Scenario-based problem implemented using Circular Linked List
+---
 
-C# I/O Streams
-Types of streams
+### 🟢 Day 41: January 30, 2026
 
-File streams
-Object streams
-ByteArray streams
-Buffered streams
+#### 📌 Topics Covered:
 
-Reader and Writer
-Key considerations while working with streams
+Lexical Twist – Scenario-based problem 🧠  
 
-🟢 Day 36: January 23, 2026
+---
 
-📌 Topics Covered:
+### 🟢 Day 42: January 31, 2026
 
-Exception Handling in C# ⚠️
+#### 📌 Topics Covered:
 
-Types of exceptions
-Checked exceptions
-Unchecked exceptions
+Future Logistics – Scenario-based problem 🚚  
 
-Custom exceptions
-Handling exceptions
+---
 
-try-catch blocks
-try-catch-finally blocks
-try-with-resources statement
+### 🟢 Day 43: February 02, 2026 — OOP Design Principles
 
-throws clause
-throw statement
+#### 📌 Topics Covered:
 
-Creating custom exceptions
-Extending the Exception class
-Defining constructors
+OOP Design Principles  
+SOLID Principles  
+KISS, DRY, DIY  
 
-🟢 Day 37: January 26, 2026
+#### 📚 What I Learned:
 
-📌 Topics Covered:
+SRP – One class, one responsibility.  
+OCP – Extend without modifying existing code.  
+LSP – Subclasses should not break base class behavior.  
+ISP – Use small, specific interfaces.  
+DIP – Depend on abstractions, not concrete implementations.  
 
-Regular Expressions (Regex) 🔍
-Metacharacters and quantifiers
+KISS – Keep design simple.  
+DRY – Avoid duplicate logic.  
+DIY – Implement concepts hands-on for better understanding.  
 
-Common patterns:
-Email validation
-Password strength validation
-Phone number format
+---
 
-C# Regex API
-Pattern and Matcher
+### 🟢 Day 44: February 03, 2026 — Design Patterns
 
-Regex methods:
-find()
-matches()
-replaceAll()
+#### 📌 Topics Covered:
 
-Introduction to NUnit Framework 🧪
-NUnit annotations
-Writing test cases
+Introduction to Design Patterns  
+Creational, Structural, Behavioral patterns  
 
-Structure of a test class
-Assertions
+#### 📚 What I Learned:
 
-🟢 Day 38: January 27, 2026
+Design patterns provide reusable solutions for common design problems.  
 
-📌 Topics Covered:
+Creational:  
+Singleton  
+Factory Method  
+Abstract Factory  
+Builder  
+Prototype  
 
-Introduction to annotations
+Structural:  
+Adapter  
+Bridge  
+Composite  
+Decorator  
+Facade  
+Proxy  
 
-Common built-in annotations
-Creating custom annotations
+Behavioral:  
+Observer  
+Strategy  
+Command  
+State  
+Template Method  
+Iterator  
+Mediator  
 
-Advanced custom annotations
-Real-world use cases
+Benefits:  
+Better maintainability  
+Scalability  
+Cleaner architecture  
 
-Annotation processing tools
+---
 
-Reflection 🔁
-Understanding reflection
-Using reflection in .NET
+### 🟢 Day 45: February 04, 2026 — Multithreading in .NET
 
-Annotations and reflection
+#### 📌 Topics Covered:
 
-🟢 Day 39: January 28, 2026
+Threads vs Tasks  
+ThreadPool & TPL  
+async/await  
+Synchronization  
 
-📌 Topics Covered:
+#### 📚 What I Learned:
 
-Introduction to CSV 📄
+Thread – Low-level, manually managed.  
+Task – High-level, recommended approach.  
 
-Reading CSV files
-Writing CSV files
+Handled concurrency using:  
+lock  
+Mutex  
+Semaphore  
+Interlocked  
+Concurrent Collections  
 
-Parsing CSV data
-Data validation
+Covered issues like race conditions and deadlocks.  
+Followed best practices for async and parallel programming.  
 
-🟢 Day 40: January 29, 2026
+---
 
-📌 Topics Covered:
+### 🟢 Day 46: February 05, 2026 — SQL & RDBMS Concepts
 
-Introduction to JSON 🧾
+#### 📌 Topics Covered:
 
-Reading JSON data
-Writing JSON data
+Database design & normalization  
+Keys & constraints  
+SQL queries & joins  
+Transactions (ACID)  
+Indexing & optimization  
 
-Parsing JSON data
-JSON schema validation
+#### 📚 What I Learned:
 
-🟢 Day 41: January 30, 2026
+Built strong fundamentals in relational database design and query optimization for scalable systems.  
 
-📌 Topics Covered:
+---
 
-Lexical Twist – Scenario-based problem 🧠
+### 🟢 Day 47: February 06, 2026 — Microsoft SQL Server (MSSQL) Concepts
 
-🟢 Day 42: January 31, 2026
+#### 📌 Topics Covered:
 
-📌 Topics Covered:
+Constraints & keys  
+Joins & subqueries  
+Aggregate functions  
+Stored procedures & functions  
+Views & cursors  
+DCL commands  
 
-Future Logistics – Scenario-based problem 🚚
+#### 📚 What I Learned:
 
-🟢 Day 43: February 02, 2026 — OOP Design Principles
+Practical implementation of enterprise-level database concepts using MSSQL.  
 
-📌 Topics Covered:
+---
 
-OOP Design Principles
-SOLID Principles
-KISS, DRY, DIY
+### 🟢 Day 48: February 07, 2026 — Practical SQL Implementation
 
-📚 What I Learned:
+#### 📌 Topics Covered:
 
-SRP – One class, one responsibility.
-OCP – Extend without modifying existing code.
-LSP – Subclasses should not break base class behavior.
-ISP – Use small, specific interfaces.
-DIP – Depend on abstractions, not concrete implementations.
+Solved practical problems on SQL & RDBMS concepts  
 
-KISS – Keep design simple.
-DRY – Avoid duplicate logic.
-DIY – Implement concepts hands-on for better understanding.
+#### 📚 What I Learned:
 
-🟢 Day 44: February 03, 2026 — Design Patterns
+Strengthened understanding of normalization, joins, transactions, procedures, optimization, and security through hands-on implementation.  
 
-📌 Topics Covered:
+---
 
-Introduction to Design Patterns
-Creational, Structural, Behavioral patterns
+### 🟢 Day 49: February 09, 2026 — Health Care Database Project
 
-📚 What I Learned:
+#### 📌 Topics Covered:
 
-Design patterns provide reusable solutions for common design problems.
+Hospital Management System database design  
+Tables, relationships, constraints  
+Core modules implementation  
 
-Creational:
-Singleton, Factory Method, Abstract Factory, Builder, Prototype
+#### 📚 What I Learned:
 
-Structural:
-Adapter, Bridge, Composite, Decorator, Facade, Proxy
+Applied SQL concepts in a real-world structured project covering patients, doctors, appointments, visits, and billing.  
 
-Behavioral:
-Observer, Strategy, Command, State, Template Method, Iterator, Mediator
+---
 
-Benefits: Better maintainability, scalability, and cleaner architecture.
+### 🟢 Day 50: February 10–12, 2026 — Health Care Project Implementation
 
-🟢 Day 45: February 04, 2026 — Multithreading in .NET
+#### 📌 Modules Implemented:
 
-📌 Topics Covered:
+Patient Management  
+Doctor Management  
+Appointment Scheduling  
+Visit & Medical Records  
+Billing & Payments  
 
-Threads vs Tasks
-ThreadPool & TPL
-async/await
-Synchronization
+#### 📚 What I Learned:
 
-📚 What I Learned:
+Implemented real-world use cases using transactions, joins, stored procedures, constraints, and performance-focused queries.  
 
-Thread – Low-level, manually managed.
-Task – High-level, recommended approach.
+---
 
-Handled concurrency using:
-lock, Mutex, Semaphore, Interlocked, Concurrent Collections
+## 📌 Notes
 
-Covered issues like race conditions and deadlocks.
-Followed best practices for async and parallel programming.
+🖥️ All programs are console-based C# applications  
 
-🟢 Day 46: February 05, 2026 — SQL & RDBMS Concepts
+🔄 Repository is updated daily with structured learning  
 
-📌 Topics Covered:
-
-Database design & normalization
-Keys & constraints
-SQL queries & joins
-Transactions (ACID)
-Indexing & optimization
-
-📚 What I Learned:
-
-Built strong fundamentals in relational database design and query optimization for scalable systems.
-
-🟢 Day 47: February 06, 2026 — Microsoft SQL Server (MSSQL) Concepts
-
-📌 Topics Covered:
-
-Constraints & keys
-Joins & subqueries
-Aggregate functions
-Stored procedures & functions
-Views & cursors
-DCL commands
-
-📚 What I Learned:
-
-Practical implementation of enterprise-level database concepts using MSSQL.
-
-🟢 Day 48: February 07, 2026 — Practical SQL Implementation
-
-📌 Topics Covered:
-
-Solved practical problems on SQL & RDBMS concepts
-
-📚 What I Learned:
-
-Strengthened understanding of normalization, joins, transactions, procedures, optimization, and security through hands-on implementation.
-
-🟢 Day 49: February 09, 2026 — Health Care Database Project
-
-📌 Topics Covered:
-
-Hospital Management System database design
-Tables, relationships, constraints
-Core modules implementation
-
-📚 What I Learned:
-
-Applied SQL concepts in a real-world structured project covering patients, doctors, appointments, visits, and billing.
-
-🟢 Day 50: February 10–12, 2026 — Health Care Project Implementation
-
-📌 Modules Implemented:
-
-Patient Management
-Doctor Management
-Appointment Scheduling
-Visit & Medical Records
-Billing & Payments
-
-📚 What I Learned:
-
-Implemented real-world use cases using transactions, joins, stored procedures, constraints, and performance-focused queries.
-
-📌 Notes
-
-🖥️ All programs are console-based C# applications
-
-🔄 Repository is updated daily with structured learning
-
-🎯 Focus on clean code, strong fundamentals, and logical thinking
+🎯 Focus on clean code, strong fundamentals, and logical thinking  
